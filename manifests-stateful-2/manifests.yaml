@@ -16,7 +16,7 @@ kind: Job
 metadata:
   name: write-timestamp-job
   annotations:
-    argocd.argoproj.io/sync-options: Force=true, Delete=false
+    argocd.argoproj.io/sync-options: Force=true, Replace=true
 spec:
   template:
     spec:
